@@ -1,0 +1,94 @@
+<html>
+<head>
+<body text="black" bgcolor="lightyellow" background=" ">
+<script>
+know = {
+
+"Hi" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Hello,how may I help you?",
+"hi" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Hello,how may I help you?",
+"Hii" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Hello,how may I help you?",
+"hii" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Hello,how may I help you?",
+"Hello" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Hi",
+"hello" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Hi there!",
+"HELLO" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Hi there!",
+"what is your name?" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  My good name is sonali mahavar.",
+"What is your name?" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  My good name is sonali mahavar.",
+"what is your name" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  My good name is sonali mahavar.",
+"What is your name" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  My good name is sonali mahavar.",
+"what is your favourite game?" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Cricket",
+"What is your favourite game?" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Cricket",
+"what is your favourite game" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Cricket",
+"what is your hobby?" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  my hobby  is searching new things.",
+"What is your hobby?" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  my hobby  is searching new things.",
+"what is your hobby" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  my hobby  is searching new things.",
+"what are you doing?" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Being with you,if you want  me  around😍",
+"what are you doing" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Being with you,if you want  me  around😍",
+"What are you doing?" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Being with you,if you want  me  around😍",
+"What are you doing" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Being with you,if you want  me  around😍",
+"what is cricket" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Cricket is a bat-and-ball game played between two teams of eleven players on a field at the centre of which is a 20-metre pitch with a wicket at each end, each comprising two bails balanced on three stumps. The batting side scores runs by striking the ball.",
+"What is cricket?" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Cricket is a bat-and-ball game played between two teams of eleven players on a field at the centre of which is a 20-metre pitch with a wicket at each end, each comprising two bails balanced on three stumps. The batting side scores runs by striking the ball.",
+"What is cricket" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Cricket is a bat-and-ball game played between two teams of eleven players on a field at the centre of which is a 20-metre pitch with a wicket at each end, each comprising two bails balanced on three stumps. The batting side scores runs by striking the ball.",
+"what is cricket?" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Cricket is a bat-and-ball game played between two teams of eleven players on a field at the centre of which is a 20-metre pitch with a wicket at each end, each comprising two bails balanced on three stumps. The batting side scores runs by striking the ball.",
+"Who are you?" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp I am Sonali Assistant.",
+"who are you?" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp I am Sonali Assistant.",
+"who are you" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp I am Sonali Assistant.",
+"How are you?" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Good!Hope you're doing well too.How may I help?",
+"How are you" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Good!Hope you're doing well too.How may I help?",
+"how are you?" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Good!Hope you're doing well too.How may I help?",
+"how are you" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Good!Hope you're doing well too.How may I help?",
+"How old are you?" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp I am infinity in age.",
+"how old are you?" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp I am infinity in age.",
+"How old are you" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp I am infinity in age.",
+"how old are you" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp I am infinity in age.",
+
+
+
+
+
+
+};
+
+
+
+function talk() {
+var user = document.getElementById("userBox").value;
+document.getElementById("userBox").value= "";
+document.getElementById("chatLog").innerHTML += user+"<br>";
+if (user in know) {
+document.getElementById("chatLog").innerHTML += know[user] + "<br>";
+} else 
+
+{
+document.getElementById("chatLog").innerHTML += "&nbsp &nbsp &nbsp &nbsp &nbsp &nbspI don't understand... <br>";
+}
+}
+
+
+
+
+
+</script>
+
+
+
+</head>
+
+
+<body>
+
+
+<p id="chatLog" > CHATBOT By SONALI MAHAVAR <br> </p>
+
+<font size="200" face="arial" color="red">
+<input id="userBox" type="text" onkeydown="if(event.keyCode == 13) {talk()}">
+
+ 
+
+</html>
+
+
+</body>
+
+
+
+</html>
